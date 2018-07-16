@@ -1,9 +1,45 @@
-import urllib.request
+#! /usr/bin/env python
+# -*- coding:utf-8 -*-
+# Author: "liuxin"
+# Date: 2018
+#practice urllib
 
 
-response = urllib.request.urlopen('https://movie.douban.com/subject/26654498/celebrities')
-html = response.read().decode('utf-8')
-print(html)
+# import urllib.request
+
+# response = urllib.request.urlopen('https://www.python.org')
+# print(type(response))
+# print(response.read().decode('utf-8'))
+
+
+
+
+
+# import urllib.request
+# import urllib.parse
+
+# data = bytes(urllib.parse.urlencode({'word':'hello'}),encoding='utf-8')
+# response = urllib.request.urlopen('http://httpbin.org/post',data=data)
+# print(response.read())
+
+
+
+
+
+# import urllib.request
+# import urllib.error
+
+# try:
+#     response = urllib.request.urlopen('http://httpbin.org/get',timeout=1)
+#     print('ok')
+#     print(response.read())
+# except urllib.error.URLError as e:
+#     print('timeout error')
+
+# print('end')
+
+
+#urllib.parse.urljoin()等方法可以拼接url
 
 
 
